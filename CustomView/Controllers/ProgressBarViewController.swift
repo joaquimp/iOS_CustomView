@@ -40,5 +40,13 @@ class ProgressBarViewController: UITableViewController {
     @IBAction func targetChange(_ sender: Any) {
         self.progressBarView?.targetValue = CGFloat(self.targetSlider.value)
     }
+    
+    @IBAction func tapTargetOccur(_ sender:UITapGestureRecognizer){
+        self.progressBarView?.targetColor = sender.view?.backgroundColor ?? .gray
+    }
+    
+    @IBAction func tapProgressOccur(_ sender:UITapGestureRecognizer){
+        self.progressBarView?.progressColor = sender.view?.backgroundColor ?? .red
+    }
 }
 
