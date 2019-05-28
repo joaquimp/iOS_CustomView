@@ -40,5 +40,15 @@ class ProgressBarViewController: UITableViewController {
     @IBAction func targetChange(_ sender: Any) {
         self.progressBarView?.targetValue = CGFloat(self.targetSlider.value)
     }
+    
+    @IBAction func ChageprogressColor(_ sender: UIButton) {
+        self.progressCircleView?.progressColor = sender.backgroundColor ?? self.progressCircleView!.progressColor
+        
+    }
+    @IBAction func ChangeProgressColor(_ sender: UIButton) {
+        self.progressCircleView?.targetColor = sender.backgroundColor ?? self.progressCircleView!.targetColor
+        
+    }
+    
 }
 

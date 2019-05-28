@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DAB894B229DAC7F00066A1C /* MultipleCirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB894A229DAC7F00066A1C /* MultipleCirclesViewController.swift */; };
+		7DAB894D229DAE9400066A1C /* CirclewWithLableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB894C229DAE9400066A1C /* CirclewWithLableTableViewController.swift */; };
 		92949A4D2295DAF3008EE240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92949A4C2295DAF3008EE240 /* AppDelegate.swift */; };
 		92949A4F2295DAF3008EE240 /* ProgressCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92949A4E2295DAF3008EE240 /* ProgressCircleViewController.swift */; };
 		92949A522295DAF3008EE240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92949A502295DAF3008EE240 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DAB894A229DAC7F00066A1C /* MultipleCirclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleCirclesViewController.swift; sourceTree = "<group>"; };
+		7DAB894C229DAE9400066A1C /* CirclewWithLableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclewWithLableTableViewController.swift; sourceTree = "<group>"; };
 		92949A492295DAF3008EE240 /* CustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92949A4C2295DAF3008EE240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92949A4E2295DAF3008EE240 /* ProgressCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				92949A4E2295DAF3008EE240 /* ProgressCircleViewController.swift */,
+				7DAB894C229DAE9400066A1C /* CirclewWithLableTableViewController.swift */,
+				7DAB894A229DAC7F00066A1C /* MultipleCirclesViewController.swift */,
 				92FB2168229A55C5000AF93E /* ProgressBarViewController.swift */,
 			);
 			path = Controllers;
@@ -164,6 +170,8 @@
 				92949A622295E067008EE240 /* ProgressBarView.swift in Sources */,
 				92FB2169229A55C5000AF93E /* ProgressBarViewController.swift in Sources */,
 				92949A602295DBF8008EE240 /* ProgressCircleView.swift in Sources */,
+				7DAB894B229DAC7F00066A1C /* MultipleCirclesViewController.swift in Sources */,
+				7DAB894D229DAE9400066A1C /* CirclewWithLableTableViewController.swift in Sources */,
 				92949A4D2295DAF3008EE240 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
