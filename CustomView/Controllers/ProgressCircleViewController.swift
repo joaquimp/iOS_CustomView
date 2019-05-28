@@ -24,38 +24,63 @@ class ProgressCircleViewController: UITableViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         
-        for view in progressViews{
-            view.setNeedsDisplay()
+        for chart in progressViews{
+            chart.setNeedsDisplay()
         }
     }
 
     @IBAction func widthChange(_ sender: Any) {
-        setValues(width: CGFloat(self.widthSlider.value), progress: nil, target: nil)
+        setValues(width: CGFloat(self.widthSlider.value))
     }
     
     @IBAction func progessChange(_ sender: Any) {
-        setValues(width: nil, progress: CGFloat(self.progressSlider.value), target: nil)
+        setValues(progress: CGFloat(self.progressSlider.value))
     }
     
     @IBAction func targetChange(_ sender: Any) {
-        setValues(width: nil, progress: nil, target: CGFloat(self.targetSlider.value))
+        setValues(target: CGFloat(self.targetSlider.value))
     }
     
+    
+    
+    func setValues(width:CGFloat){
+        setValues(width: width, progress: nil, target: nil)
+    }
+    
+    func setValues(progress:CGFloat){
+        setValues(width: nil, progress: progress, target: nil)
+    }
+    
+    func setValues(target:CGFloat){
+        setValues(width: nil, progress: nil, target: target)
+    }
     func setValues(width:CGFloat?, progress:CGFloat?, target:CGFloat?){
         if let width = width{
-            for view in progressViews{
-                view.circleWidth = width
+            for chart in progressViews{
+                chart.circleWidth = width
             }
         }
         if let progress = progress{
-            for view in progressViews{
-                view.progressValue = progress
+            for chart in progressViews{
+                chart.progressValue = progress
             }
         }
         if let target = target{
-            for view in progressViews{
-                view.targetValue = target
+            for chart in progressViews{
+                chart.targetValue = target
             }
+        }
+    }
+    
+    @IBAction func tapTargetOccur(_ sender : UITapGestureRecognizer){
+        for chart in progressViews{
+            chart.targetColor = sender.view?.backgroundColor ?? .gray
+        }
+    }
+    
+    @IBAction func tapProgressOccur(_ sender : UITapGestureRecognizer){
+        for chart in progressViews{
+            chart.progressColor = sender.view?.backgroundColor ?? .red
         }
     }
 }
