@@ -38,13 +38,25 @@ class ProgressCircleView: UIView {
     }
     
     @IBInspectable
-    var circleColor:UIColor = UIColor.black
+    var circleColor:UIColor = UIColor.black{
+        didSet{
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
-    var progressColor:UIColor = UIColor.yellow
+    var progressColor:UIColor = UIColor.yellow{
+        didSet{
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
-    var targetColor:UIColor = UIColor.green
+    var targetColor:UIColor = UIColor.green{
+        didSet{
+            setNeedsDisplay()
+        }
+    }
     
     // Method that draw the circle, progress and target
     override func draw(_ rect: CGRect) {
