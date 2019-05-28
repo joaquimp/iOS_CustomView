@@ -19,7 +19,7 @@ class ProgressCircleViewController: UITableViewController {
     
     var progress: Float = 0 {
         didSet {
-            progressLabel.text = "\(String(format: "%.2f", progress))%"
+            progressLabel.text = "\(String(format: "%.2f", progress*100))%"
         }
     }
     
