@@ -54,8 +54,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0j-bi-2ZE" customClass="ProgressCircleView" customModule="CustomView" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="8" width="414" height="192"/>
+                                                    <rect key="frame" x="0.0" y="8" width="264" height="192"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-we-Vcp">
+                                                            <rect key="frame" x="111" y="86" width="42" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Iw5-we-Vcp" firstAttribute="centerY" secondItem="Y0j-bi-2ZE" secondAttribute="centerY" id="6M3-Xq-lCl"/>
+                                                        <constraint firstItem="Iw5-we-Vcp" firstAttribute="centerX" secondItem="Y0j-bi-2ZE" secondAttribute="centerX" id="jhs-iS-0vD"/>
+                                                    </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
                                                             <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589041098" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,12 +89,41 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbU-lL-hzq">
+                                                    <rect key="frame" x="243" y="41.5" width="163" height="117"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLk-qQ-EgR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="163" height="50"/>
+                                                            <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="E7K-zJ-rwd"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Random Progress Color"/>
+                                                            <connections>
+                                                                <action selector="progressColorTap:" destination="5iR-vg-JBg" eventType="touchUpInside" id="Eoj-lc-ReK"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45I-8M-WeE">
+                                                            <rect key="frame" x="0.0" y="67" width="163" height="50"/>
+                                                            <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="QcD-W6-zTB"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Random Value Color"/>
+                                                            <connections>
+                                                                <action selector="targetColorTap:" destination="5iR-vg-JBg" eventType="touchUpInside" id="Y2J-op-w8n"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Y0j-bi-2ZE" firstAttribute="leading" secondItem="iHX-3l-oVj" secondAttribute="leading" id="2KX-0f-Btl"/>
                                                 <constraint firstAttribute="bottom" secondItem="Y0j-bi-2ZE" secondAttribute="bottom" id="AxZ-ua-03i"/>
                                                 <constraint firstItem="Y0j-bi-2ZE" firstAttribute="top" secondItem="iHX-3l-oVj" secondAttribute="top" constant="8" id="IUc-71-LnI"/>
-                                                <constraint firstAttribute="trailing" secondItem="Y0j-bi-2ZE" secondAttribute="trailing" id="KHw-9u-Hy6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y0j-bi-2ZE" secondAttribute="trailing" constant="150" id="KHw-9u-Hy6"/>
+                                                <constraint firstAttribute="trailing" secondItem="vbU-lL-hzq" secondAttribute="trailing" constant="8" id="rgz-Ps-gbo"/>
+                                                <constraint firstItem="vbU-lL-hzq" firstAttribute="centerY" secondItem="iHX-3l-oVj" secondAttribute="centerY" id="uAU-Iv-OPR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -206,6 +247,7 @@
                     <tabBarItem key="tabBarItem" title="Circle" image="cicle" selectedImage="cicleSelected" id="gtV-i6-qP3"/>
                     <connections>
                         <outlet property="progressCircleView" destination="Y0j-bi-2ZE" id="RfR-EA-jIc"/>
+                        <outlet property="progressLabel" destination="Iw5-we-Vcp" id="9ma-oY-E5z"/>
                         <outlet property="progressSlider" destination="LnG-Y8-C5N" id="F4D-Sf-vHY"/>
                         <outlet property="targetSlider" destination="g78-nB-pd6" id="B2x-1b-VAU"/>
                         <outlet property="widthSlider" destination="Q8n-NL-f4d" id="DmN-qb-ZFR"/>
