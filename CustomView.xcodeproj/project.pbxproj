@@ -15,6 +15,7 @@
 		92949A602295DBF8008EE240 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92949A5F2295DBF8008EE240 /* ProgressCircleView.swift */; };
 		92949A622295E067008EE240 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92949A612295E067008EE240 /* ProgressBarView.swift */; };
 		92FB2169229A55C5000AF93E /* ProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB2168229A55C5000AF93E /* ProgressBarViewController.swift */; };
+		F2069BE2229DB69F006537AE /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2069BE1229DB69F006537AE /* ColorPaletteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		92949A5F2295DBF8008EE240 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		92949A612295E067008EE240 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		92FB2168229A55C5000AF93E /* ProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarViewController.swift; sourceTree = "<group>"; };
+		F2069BE1229DB69F006537AE /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				92949A5E2295DB10008EE240 /* Views */,
 				92949A4C2295DAF3008EE240 /* AppDelegate.swift */,
 				92949A502295DAF3008EE240 /* Main.storyboard */,
+				F2069BE1229DB69F006537AE /* ColorPaletteView.swift */,
 				92949A532295DAF7008EE240 /* Assets.xcassets */,
 				92949A552295DAF7008EE240 /* LaunchScreen.storyboard */,
 				92949A582295DAF7008EE240 /* Info.plist */,
@@ -164,6 +167,7 @@
 				92949A622295E067008EE240 /* ProgressBarView.swift in Sources */,
 				92FB2169229A55C5000AF93E /* ProgressBarViewController.swift in Sources */,
 				92949A602295DBF8008EE240 /* ProgressCircleView.swift in Sources */,
+				F2069BE2229DB69F006537AE /* ColorPaletteView.swift in Sources */,
 				92949A4D2295DAF3008EE240 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34E95R7U23;
+				DEVELOPMENT_TEAM = RAZG7U3SR6;
 				INFOPLIST_FILE = CustomView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -329,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34E95R7U23;
+				DEVELOPMENT_TEAM = RAZG7U3SR6;
 				INFOPLIST_FILE = CustomView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
