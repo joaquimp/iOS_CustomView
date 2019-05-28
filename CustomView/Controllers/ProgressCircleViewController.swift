@@ -9,8 +9,8 @@
 import UIKit
 
 class ProgressCircleViewController: UITableViewController {
-
-    @IBOutlet weak var progressCircleView: ProgressCircleView?
+    @IBOutlet var progressViews: [ProgressCircleView]!
+    
     @IBOutlet weak var widthSlider: UISlider!
     @IBOutlet weak var progressSlider: UISlider!
     @IBOutlet weak var targetSlider: UISlider!
@@ -18,27 +18,45 @@ class ProgressCircleViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.progressCircleView?.circleWidth = CGFloat(self.widthSlider.value)
-        self.progressCircleView?.progressValue = CGFloat(self.progressSlider.value)
-        self.progressCircleView?.targetValue = CGFloat(self.targetSlider.value)
+        setValues(width: CGFloat(self.widthSlider.value), progress: CGFloat(self.progressSlider.value), target: CGFloat(self.targetSlider.value))
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         
-        self.progressCircleView?.setNeedsDisplay()
+        for view in progressViews{
+            view.setNeedsDisplay()
+        }
     }
 
     @IBAction func widthChange(_ sender: Any) {
-        self.progressCircleView?.circleWidth = CGFloat(self.widthSlider.value)
+        setValues(width: CGFloat(self.widthSlider.value), progress: nil, target: nil)
     }
     
     @IBAction func progessChange(_ sender: Any) {
-        self.progressCircleView?.progressValue = CGFloat(self.progressSlider.value)
+        setValues(width: nil, progress: CGFloat(self.progressSlider.value), target: nil)
     }
     
     @IBAction func targetChange(_ sender: Any) {
-        self.progressCircleView?.targetValue = CGFloat(self.targetSlider.value)
+        setValues(width: nil, progress: nil, target: CGFloat(self.targetSlider.value))
+    }
+    
+    func setValues(width:CGFloat?, progress:CGFloat?, target:CGFloat?){
+        if let width = width{
+            for view in progressViews{
+                view.circleWidth = width
+            }
+        }
+        if let progress = progress{
+            for view in progressViews{
+                view.progressValue = progress
+            }
+        }
+        if let target = target{
+            for view in progressViews{
+                view.targetValue = target
+            }
+        }
     }
 }
 
