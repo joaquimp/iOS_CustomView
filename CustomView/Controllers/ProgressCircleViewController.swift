@@ -58,7 +58,7 @@ class ProgressCircleViewController: UITableViewController {
         {
             chart.progressValue = CGFloat(self.progressSlider.value)
         }
-        lblProgressPercent.text = String(Int(self.progressSlider.value * 100)) + "%"
+        lblProgressPercent.text = (String(Int(self.progressSlider.value * 100)) + "%")
     }
     
     @IBAction func targetChange(_ sender: Any) {
@@ -67,7 +67,7 @@ class ProgressCircleViewController: UITableViewController {
         {
             chart.targetValue = CGFloat(self.targetSlider.value)
         }
-        lblTargetPercent.text = String(Int(self.targetSlider.value * 100)) + "%"
+        lblTargetPercent.text = (String(Int(self.targetSlider.value * 100)) + "%")
     }
     
     

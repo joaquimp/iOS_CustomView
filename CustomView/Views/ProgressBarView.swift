@@ -32,11 +32,23 @@ class ProgressBarView: UIView {
     }
     
     @IBInspectable
-    var lineColor:UIColor = UIColor.black
+    var lineColor:UIColor = UIColor.black {
+        didSet{
+            setNeedsDisplay()
+        }
+    }
     @IBInspectable
-    var targetColor:UIColor = UIColor.blue
+    var targetColor:UIColor = UIColor.blue {
+        didSet{
+            setNeedsDisplay()
+        }
+    }
     @IBInspectable
-    var progressColor:UIColor = UIColor.yellow
+    var progressColor:UIColor = UIColor.yellow {
+        didSet{
+            setNeedsDisplay()
+        }
+    }
     
     
     override func draw(_ rect: CGRect) {
