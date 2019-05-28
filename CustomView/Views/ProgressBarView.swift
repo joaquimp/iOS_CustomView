@@ -10,6 +10,27 @@ import UIKit
 
 @IBDesignable
 class ProgressBarView: UIView {
+    private var lblProgressPercentage:UILabel = UILabel(frame: CGRect(x: 15, y: 10, width: 60, height: 25))
+    private var lblTargetPercentage:UILabel = UILabel(frame: CGRect(x: 15, y: 35, width: 60, height: 25))
+    private func setPercentage(){
+        lblTargetPercentage.text = "\(String(format:"%.1f", targetValue * 100))%"
+        lblProgressPercentage.text = "\(String(format:"%.1f", progressValue/targetValue * 100))%"
+    }
+    
+    @IBInspectable
+    var showPercentage:Bool = false{
+        didSet{
+            if showPercentage{
+                addSubview(lblProgressPercentage)
+                addSubview(lblTargetPercentage)
+            }
+            else{
+                lblProgressPercentage.removeFromSuperview()
+                lblTargetPercentage.removeFromSuperview()
+            }
+        }
+    }
+    
     @IBInspectable
     var lineWidth:CGFloat = 10.0 {
         didSet{
@@ -20,6 +41,7 @@ class ProgressBarView: UIView {
     @IBInspectable
     var targetValue:CGFloat = 0.25 {
         didSet{
+            setPercentage()
             setNeedsDisplay()
         }
     }
@@ -27,6 +49,7 @@ class ProgressBarView: UIView {
     @IBInspectable
     var progressValue:CGFloat = 0.0 {
         didSet{
+            setPercentage()
             setNeedsDisplay()
         }
     }

@@ -13,11 +13,33 @@ import UIKit
 
 @IBDesignable
 class ProgressCircleView: UIView {
+    private var lblProgressPercentage:UILabel = UILabel(frame: CGRect(x: 15, y: 10, width: 60, height: 25))
+    private var lblTargetPercentage:UILabel = UILabel(frame: CGRect(x: 15, y: 35, width: 60, height: 25))
+    private func setPercentage(){
+        lblTargetPercentage.text = "\(String(format:"%.1f", targetValue * 100))%"
+        lblProgressPercentage.text = "\(String(format:"%.1f", progressValue/targetValue * 100))%"
+    }
+    
+    @IBInspectable
+    var showPercentage:Bool = false{
+        didSet{
+            if showPercentage{
+                addSubview(lblProgressPercentage)
+                addSubview(lblTargetPercentage)
+            }
+            else{
+                lblProgressPercentage.removeFromSuperview()
+                lblTargetPercentage.removeFromSuperview()
+            }
+        }
+    }
+    
     
     @IBInspectable
     // The value of current progress between 0.0 and 1.0
     var progressValue:CGFloat = 0.0 {
         didSet{
+            setPercentage()
             setNeedsDisplay()
         }
     }
@@ -26,6 +48,7 @@ class ProgressCircleView: UIView {
     // TargetValue is a value between 0.0 and 1.0 that represent the value to be archieved
     var targetValue:CGFloat = 0.75 {
         didSet{
+            setPercentage()
             setNeedsDisplay()
         }
     }
