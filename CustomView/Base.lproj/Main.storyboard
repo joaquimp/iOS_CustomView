@@ -55,6 +55,60 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0j-bi-2ZE" customClass="ProgressCircleView" customModule="CustomView" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="8" width="414" height="192"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-4v-Ida" customClass="ProgressCircleView" customModule="CustomView" customModuleProvider="target">
+                                                            <rect key="frame" x="87" y="32" width="240" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Msl-jc-rF8" customClass="ProgressCircleView" customModule="CustomView" customModuleProvider="target">
+                                                                    <rect key="frame" x="60" y="33" width="121" height="63"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                                            <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                                            <color key="value" red="0.66274964810000003" green="0.66273695229999996" blue="0.66274553540000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                                            <real key="value" value="0.25"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                                            <real key="value" value="0.75"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                                            <real key="value" value="20"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                                    <color key="value" red="0.66274964810000003" green="0.66273695229999996" blue="0.66274553540000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                                    <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                                    <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                                    <real key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                                    <real key="value" value="0.75"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                                    <real key="value" value="0.25"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
@@ -67,7 +121,7 @@
                                                             <real key="value" value="0.75"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
-                                                            <real key="value" value="30"/>
+                                                            <real key="value" value="20"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
                                                             <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -206,6 +260,8 @@
                     <tabBarItem key="tabBarItem" title="Circle" image="cicle" selectedImage="cicleSelected" id="gtV-i6-qP3"/>
                     <connections>
                         <outlet property="progressCircleView" destination="Y0j-bi-2ZE" id="RfR-EA-jIc"/>
+                        <outlet property="progressCircleViewMedium" destination="5ch-4v-Ida" id="9Ip-RL-oup"/>
+                        <outlet property="progressCircleViewSmall" destination="Msl-jc-rF8" id="aPv-G7-Yym"/>
                         <outlet property="progressSlider" destination="LnG-Y8-C5N" id="F4D-Sf-vHY"/>
                         <outlet property="targetSlider" destination="g78-nB-pd6" id="B2x-1b-VAU"/>
                         <outlet property="widthSlider" destination="Q8n-NL-f4d" id="DmN-qb-ZFR"/>
@@ -213,7 +269,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7H-Sn-JKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="143"/>
+            <point key="canvasLocation" x="847.82608695652175" y="142.63392857142856"/>
         </scene>
         <!--Bar-->
         <scene sceneID="5Hn-u6-Q9Z">
