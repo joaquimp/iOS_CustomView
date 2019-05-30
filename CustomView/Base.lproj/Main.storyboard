@@ -58,7 +58,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
-                                                            <color key="value" red="1" green="0.2527923882" blue="1" alpha="0.48747859589041098" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="value" red="0.97647058823529409" green="0.3411764705882353" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
                                                             <real key="value" value="0.25"/>
@@ -67,22 +67,94 @@
                                                             <real key="value" value="0.75"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
-                                                            <real key="value" value="30"/>
+                                                            <real key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
                                                             <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
-                                                            <color key="value" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="value" red="0.97647058819999999" green="0.53333333329999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZ0-AI-ufK" customClass="ProgressCircleView" customModule="CustomView" customModuleProvider="target">
+                                                    <rect key="frame" x="52" y="32" width="310.5" height="144"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                            <color key="value" red="0.97647058819999999" green="0.3411764706" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                            <real key="value" value="0.25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                            <real key="value" value="0.75"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                            <color key="value" red="0.97647058823529409" green="0.53333333333333333" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sz8-em-pVa" customClass="ProgressCircleView" customModule="CustomView" customModuleProvider="target">
+                                                    <rect key="frame" x="103.5" y="56" width="207" height="96"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                            <color key="value" red="0.97647058819999999" green="0.3411764706" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                            <real key="value" value="0.25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="targetValue">
+                                                            <real key="value" value="0.75"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="targetColor">
+                                                            <color key="value" red="0.97647058819999999" green="0.53333333329999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAa-qK-JHK">
+                                                    <rect key="frame" x="207" y="93.5" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zy-hA-z5w">
+                                                    <rect key="frame" x="207" y="114.5" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Sz8-em-pVa" firstAttribute="centerY" secondItem="Y0j-bi-2ZE" secondAttribute="centerY" id="0Ve-f9-nJ6"/>
                                                 <constraint firstItem="Y0j-bi-2ZE" firstAttribute="leading" secondItem="iHX-3l-oVj" secondAttribute="leading" id="2KX-0f-Btl"/>
+                                                <constraint firstItem="Sz8-em-pVa" firstAttribute="centerX" secondItem="Y0j-bi-2ZE" secondAttribute="centerX" id="3o0-GB-yS8"/>
+                                                <constraint firstItem="VZ0-AI-ufK" firstAttribute="centerY" secondItem="Y0j-bi-2ZE" secondAttribute="centerY" id="4kd-5Z-t2u"/>
+                                                <constraint firstItem="Sz8-em-pVa" firstAttribute="height" secondItem="Y0j-bi-2ZE" secondAttribute="height" multiplier="0.5" id="7Rd-mi-27Z"/>
+                                                <constraint firstItem="Sz8-em-pVa" firstAttribute="width" secondItem="Y0j-bi-2ZE" secondAttribute="width" multiplier="0.5" id="9BW-3F-lkP"/>
                                                 <constraint firstAttribute="bottom" secondItem="Y0j-bi-2ZE" secondAttribute="bottom" id="AxZ-ua-03i"/>
+                                                <constraint firstItem="yAa-qK-JHK" firstAttribute="centerX" secondItem="Y0j-bi-2ZE" secondAttribute="centerX" id="E6k-xU-yJ7"/>
                                                 <constraint firstItem="Y0j-bi-2ZE" firstAttribute="top" secondItem="iHX-3l-oVj" secondAttribute="top" constant="8" id="IUc-71-LnI"/>
                                                 <constraint firstAttribute="trailing" secondItem="Y0j-bi-2ZE" secondAttribute="trailing" id="KHw-9u-Hy6"/>
+                                                <constraint firstItem="0Zy-hA-z5w" firstAttribute="centerY" secondItem="Y0j-bi-2ZE" secondAttribute="centerY" multiplier="1.1" id="TC2-U2-gZR"/>
+                                                <constraint firstItem="VZ0-AI-ufK" firstAttribute="width" secondItem="Y0j-bi-2ZE" secondAttribute="width" multiplier="0.75" id="cOm-Mm-ovR"/>
+                                                <constraint firstItem="0Zy-hA-z5w" firstAttribute="centerX" secondItem="Y0j-bi-2ZE" secondAttribute="centerX" id="juD-ch-Uty"/>
+                                                <constraint firstItem="VZ0-AI-ufK" firstAttribute="centerX" secondItem="Y0j-bi-2ZE" secondAttribute="centerX" id="mO4-JP-iJe"/>
+                                                <constraint firstItem="yAa-qK-JHK" firstAttribute="centerY" secondItem="Y0j-bi-2ZE" secondAttribute="centerY" multiplier="0.9" id="tgj-wV-Sw4"/>
+                                                <constraint firstItem="VZ0-AI-ufK" firstAttribute="height" secondItem="Y0j-bi-2ZE" secondAttribute="height" multiplier="0.75" id="vtl-Bk-jkv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -197,6 +269,116 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Color Picker" id="Ba8-z8-O7M" userLabel="Color Picker">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="56" id="rhQ-Lw-2mF">
+                                        <rect key="frame" x="0.0" y="544" width="414" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rhQ-Lw-2mF" id="UgU-NJ-Ufr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Color Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7b-QX-cbe">
+                                                    <rect key="frame" x="10.5" y="1.5" width="393" height="53"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="k7b-QX-cbe" firstAttribute="centerX" secondItem="UgU-NJ-Ufr" secondAttribute="centerX" id="Xrc-E1-Cf0"/>
+                                                <constraint firstItem="k7b-QX-cbe" firstAttribute="height" secondItem="UgU-NJ-Ufr" secondAttribute="height" multiplier="0.95" id="Z9d-29-ptw"/>
+                                                <constraint firstItem="k7b-QX-cbe" firstAttribute="centerY" secondItem="UgU-NJ-Ufr" secondAttribute="centerY" id="cd4-cU-L5t"/>
+                                                <constraint firstItem="k7b-QX-cbe" firstAttribute="width" secondItem="UgU-NJ-Ufr" secondAttribute="width" multiplier="0.95" id="gRc-8t-h2B"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SmI-15-O6G">
+                                        <rect key="frame" x="0.0" y="600" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SmI-15-O6G" id="ewq-pm-sDh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SVP-24-XQ1">
+                                                    <rect key="frame" x="10.5" y="4.5" width="393" height="36"/>
+                                                    <segments>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="changeProgressColor:" destination="5iR-vg-JBg" eventType="valueChanged" id="Qql-JR-an4"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SVP-24-XQ1" firstAttribute="centerY" secondItem="ewq-pm-sDh" secondAttribute="centerY" id="WdG-w6-jQI"/>
+                                                <constraint firstItem="SVP-24-XQ1" firstAttribute="centerX" secondItem="ewq-pm-sDh" secondAttribute="centerX" id="sk6-P2-c7a"/>
+                                                <constraint firstItem="SVP-24-XQ1" firstAttribute="height" secondItem="ewq-pm-sDh" secondAttribute="height" multiplier="0.8" id="wdm-DJ-cff"/>
+                                                <constraint firstItem="SVP-24-XQ1" firstAttribute="width" secondItem="ewq-pm-sDh" secondAttribute="width" multiplier="0.95" id="zNR-iQ-qqE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="rAI-Zy-QBW">
+                                        <rect key="frame" x="0.0" y="644" width="414" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rAI-Zy-QBW" id="xl2-Lj-1UQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Color Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX2-dx-u5a">
+                                                    <rect key="frame" x="10.5" y="1.5" width="393" height="52"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yX2-dx-u5a" firstAttribute="width" secondItem="xl2-Lj-1UQ" secondAttribute="width" multiplier="0.95" id="52U-xN-Pfu"/>
+                                                <constraint firstItem="yX2-dx-u5a" firstAttribute="height" secondItem="xl2-Lj-1UQ" secondAttribute="height" multiplier="0.95" id="L1B-ko-Sxd"/>
+                                                <constraint firstItem="yX2-dx-u5a" firstAttribute="centerX" secondItem="xl2-Lj-1UQ" secondAttribute="centerX" id="LuP-kb-jcT"/>
+                                                <constraint firstItem="yX2-dx-u5a" firstAttribute="centerY" secondItem="xl2-Lj-1UQ" secondAttribute="centerY" id="lWG-x1-Qfp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1ca-tn-Lh9">
+                                        <rect key="frame" x="0.0" y="699" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ca-tn-Lh9" id="hFA-pP-cF8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kiK-P9-gYx">
+                                                    <rect key="frame" x="10.5" y="4.5" width="393" height="36"/>
+                                                    <segments>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="changeTargetColor:" destination="5iR-vg-JBg" eventType="valueChanged" id="St7-3x-90o"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kiK-P9-gYx" firstAttribute="centerX" secondItem="hFA-pP-cF8" secondAttribute="centerX" id="Hx9-Io-FWO"/>
+                                                <constraint firstItem="kiK-P9-gYx" firstAttribute="height" secondItem="hFA-pP-cF8" secondAttribute="height" multiplier="0.8" id="L6J-Nb-o1I"/>
+                                                <constraint firstItem="kiK-P9-gYx" firstAttribute="centerY" secondItem="hFA-pP-cF8" secondAttribute="centerY" id="VDw-tC-YjT"/>
+                                                <constraint firstItem="kiK-P9-gYx" firstAttribute="width" secondItem="hFA-pP-cF8" secondAttribute="width" multiplier="0.95" id="mNz-z6-4bw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="5iR-vg-JBg" id="9wa-G4-8wo"/>
@@ -206,7 +388,13 @@
                     <tabBarItem key="tabBarItem" title="Circle" image="cicle" selectedImage="cicleSelected" id="gtV-i6-qP3"/>
                     <connections>
                         <outlet property="progressCircleView" destination="Y0j-bi-2ZE" id="RfR-EA-jIc"/>
+                        <outlet property="progressCircleView2" destination="VZ0-AI-ufK" id="5xs-0M-Ju0"/>
+                        <outlet property="progressCircleView3" destination="Sz8-em-pVa" id="SsZ-Wo-Mid"/>
+                        <outlet property="progressPercentageLabel" destination="yAa-qK-JHK" id="lNa-dS-sWD"/>
+                        <outlet property="progressSegmentedColorPicker" destination="SVP-24-XQ1" id="fDL-yC-BOg"/>
                         <outlet property="progressSlider" destination="LnG-Y8-C5N" id="F4D-Sf-vHY"/>
+                        <outlet property="targetPercentageLabel" destination="0Zy-hA-z5w" id="a4F-vq-6eM"/>
+                        <outlet property="targetSegmentedColorPicker" destination="kiK-P9-gYx" id="3RJ-im-AQ9"/>
                         <outlet property="targetSlider" destination="g78-nB-pd6" id="B2x-1b-VAU"/>
                         <outlet property="widthSlider" destination="Q8n-NL-f4d" id="DmN-qb-ZFR"/>
                     </connections>
@@ -385,6 +573,116 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Color Picker" id="vjb-9d-ybn">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="m2K-p9-c58">
+                                        <rect key="frame" x="0.0" y="544" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m2K-p9-c58" id="Fed-X1-Vr0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Color Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM4-oX-xea">
+                                                    <rect key="frame" x="10.5" y="1.5" width="393" height="47.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VM4-oX-xea" firstAttribute="centerY" secondItem="Fed-X1-Vr0" secondAttribute="centerY" id="3Bg-4T-zDc"/>
+                                                <constraint firstItem="VM4-oX-xea" firstAttribute="height" secondItem="Fed-X1-Vr0" secondAttribute="height" multiplier="0.95" id="Fvl-73-9Ph"/>
+                                                <constraint firstItem="VM4-oX-xea" firstAttribute="centerX" secondItem="Fed-X1-Vr0" secondAttribute="centerX" id="cJM-Ck-xUo"/>
+                                                <constraint firstItem="VM4-oX-xea" firstAttribute="width" secondItem="Fed-X1-Vr0" secondAttribute="width" multiplier="0.95" id="i3A-eI-g5F"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Fb5-Xe-6Ng">
+                                        <rect key="frame" x="0.0" y="594" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fb5-Xe-6Ng" id="l2W-eP-3A5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PXB-R6-mw0">
+                                                    <rect key="frame" x="10.5" y="1" width="393" height="43"/>
+                                                    <segments>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="changeProgressColor:" destination="ueR-Fi-SVc" eventType="valueChanged" id="RPU-OB-ZgC"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PXB-R6-mw0" firstAttribute="width" secondItem="l2W-eP-3A5" secondAttribute="width" multiplier="0.95" id="IaX-Gc-oIJ"/>
+                                                <constraint firstItem="PXB-R6-mw0" firstAttribute="height" secondItem="l2W-eP-3A5" secondAttribute="height" multiplier="0.95" id="Tle-NI-oHv"/>
+                                                <constraint firstItem="PXB-R6-mw0" firstAttribute="centerX" secondItem="l2W-eP-3A5" secondAttribute="centerX" id="VOB-hH-UMv"/>
+                                                <constraint firstItem="PXB-R6-mw0" firstAttribute="centerY" secondItem="l2W-eP-3A5" secondAttribute="centerY" id="q2Y-xw-fjz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="dK2-Eg-SMX">
+                                        <rect key="frame" x="0.0" y="638" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dK2-Eg-SMX" id="nMM-Sb-5VP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Color Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6s-Bu-Jf9">
+                                                    <rect key="frame" x="10.5" y="1.5" width="393" height="47.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="V6s-Bu-Jf9" firstAttribute="width" secondItem="nMM-Sb-5VP" secondAttribute="width" multiplier="0.95" id="ZSA-zq-GgD"/>
+                                                <constraint firstItem="V6s-Bu-Jf9" firstAttribute="height" secondItem="nMM-Sb-5VP" secondAttribute="height" multiplier="0.95" id="sEN-p6-Eet"/>
+                                                <constraint firstItem="V6s-Bu-Jf9" firstAttribute="centerX" secondItem="nMM-Sb-5VP" secondAttribute="centerX" id="ur0-de-ffb"/>
+                                                <constraint firstItem="V6s-Bu-Jf9" firstAttribute="centerY" secondItem="nMM-Sb-5VP" secondAttribute="centerY" id="wdm-3W-0gc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qxy-mF-HTE">
+                                        <rect key="frame" x="0.0" y="688" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qxy-mF-HTE" id="0vl-vC-q9H">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lne-ue-gK5">
+                                                    <rect key="frame" x="10.5" y="1" width="393" height="43"/>
+                                                    <segments>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                        <segment title=""/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="changeTargetColor:" destination="ueR-Fi-SVc" eventType="valueChanged" id="aKg-g0-8Q0"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lne-ue-gK5" firstAttribute="height" secondItem="0vl-vC-q9H" secondAttribute="height" multiplier="0.95" id="6Th-Tw-EVC"/>
+                                                <constraint firstItem="lne-ue-gK5" firstAttribute="width" secondItem="0vl-vC-q9H" secondAttribute="width" multiplier="0.95" id="BL8-Oy-Gx0"/>
+                                                <constraint firstItem="lne-ue-gK5" firstAttribute="centerY" secondItem="0vl-vC-q9H" secondAttribute="centerY" id="doS-U5-Z7T"/>
+                                                <constraint firstItem="lne-ue-gK5" firstAttribute="centerX" secondItem="0vl-vC-q9H" secondAttribute="centerX" id="yXm-16-WZO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="ueR-Fi-SVc" id="iow-xQ-SAU"/>
@@ -394,7 +692,9 @@
                     <tabBarItem key="tabBarItem" title="Bar" image="line" selectedImage="lineSelected" id="jiV-6g-6wZ"/>
                     <connections>
                         <outlet property="progressBarView" destination="UJH-aF-Cu6" id="xVH-E8-spb"/>
+                        <outlet property="progressSegmentedColorPicker" destination="PXB-R6-mw0" id="Ptd-Ni-JOV"/>
                         <outlet property="progressSlider" destination="q0N-77-lDl" id="WC8-Qw-jDq"/>
+                        <outlet property="targetSegmentedColorPicker" destination="lne-ue-gK5" id="oU0-CI-BcR"/>
                         <outlet property="targetSlider" destination="3AI-9Y-dSK" id="FbZ-Bf-pjp"/>
                         <outlet property="widthSlider" destination="bFc-4P-NRJ" id="uo9-zk-QpL"/>
                     </connections>
